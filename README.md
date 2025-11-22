@@ -12,7 +12,7 @@
 
 After cloning the repository:
 
-1.  Install dependencies and requirements individually as guided in next steps.(using a **virtual environment** is strongly recommended).
+1.  Install dependencies and requirements individually as guided in upcomming steps.(using a **virtual environment** is strongly recommended).
 2.  Run the components separately using the commands provided below.
 3.  Create a new user (use the register option) once the server is running.
 
@@ -52,12 +52,16 @@ After cloning the repository:
 ### II. Desktop Frontend (`Desktop_frontend`)
 
 1.  **Environment:** Use the same virtual environment as the common server, or install requirements separately.
-2.  **Install Dependencies:**
+2.  **Navigate to Directory:**
+    ```bash
+    cd Desktop_frontend
+    ```
+3.  **Install Dependencies:**
     ```bash
     pip install -r requirements.txt
     ```
 
-3.  **Run Application:**
+4.  **Run Application:**
     ```bash
     python Desktop_frontend.py
     ```
