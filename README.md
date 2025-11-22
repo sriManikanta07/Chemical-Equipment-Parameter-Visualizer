@@ -1,50 +1,82 @@
-Desktop_frontend  ------ this is the Desktop Application Frontend
-	
-equipment_project ----- this the common server in Django (desktop + web versions)
-	
-webapp  ----------------- this is reack frontend for web application
+# Chemical Equipment Parameter Visualizer
 
+## Project Components
 
-Ater cloning repo for each :
-   # install dependencies and requirement(in virtual environment recommended)
-   # run them separetely using commonds given below
-   # create a new user(register option)
+| Directory | Description | Technology |
+| :--- | :--- | :--- |
+| `Desktop_frontend` | The **Desktop Application Frontend**. | Python |
+| `equipment_project` | The **Common Server** (Backend API) for both desktop and web versions. | Django |
+| `webapp` | The **Web Application Frontend**. | React.js |
 
-Commands for (equipment_project)  :
-   # git clone https://github.com/sriManikanta07/Chemical-Equipment-Parameter-Visualizer
-   # cd Chemical-Equipment-Parameter-Visualizer
-   # python -m venv venv
-   # source venv/Scripts/activate  # (Windows)
-   # Install dependencies
-      pip install -r requirements.txt
+## Getting Started
 
-   # run 
-     (for migration)
-     python manage.py makemigrations
-     python manage.py migrate
-     (to run server)
-     python manage.py runserver 8080
+After cloning the repository:
 
+1.  Install dependencies and requirements (using a **virtual environment** is strongly recommended).
+2.  Run the components separately using the commands provided below.
+3.  Create a new user (use the register option) once the server is running.
 
-Commands for (Desktop_frontend)  :
-    # use same virtual environemen as of common server or install requirements
-    # Install dependencies
-       pip install -r requirements.txt
+## Setup and Run Commands
 
-   # run 
-      Python Desktop_frontend.py
-   # it will open the window
+### I. Common Server (`equipment_project`)
 
-Commands for (webapp)  :
-   # cd webapp
-   # install dependencies
-      npm install
-   # run app
-      npm run dev
-   # this will open application a brower window   
-   # if now opening check port no. 5174 (should be free)
+1.  **Clone Repository:**
+    ```bash
+    git clone [https://github.com/sriManikanta07/Chemical-Equipment-Parameter-Visualizer](https://github.com/sriManikanta07/Chemical-Equipment-Parameter-Visualizer)
+    cd Chemical-Equipment-Parameter-Visualizer
+    ```
 
-  
-      
-    
+2.  **Virtual Environment Setup:**
+    ```bash
+    python -m venv venv
+    source venv/Scripts/activate  # Windows
+    # or source venv/bin/activate # Linux/macOS
+    ```
 
+3.  **Install Dependencies:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+4.  **Run Server:**
+    * **Migrations:**
+        ```bash
+        python manage.py makemigrations
+        python manage.py migrate
+        ```
+    * **Start Server:**
+        ```bash
+        python manage.py runserver 8080
+        ```
+
+### II. Desktop Frontend (`Desktop_frontend`)
+
+1.  **Environment:** Use the same virtual environment as the common server, or install requirements separately.
+2.  **Install Dependencies:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+3.  **Run Application:**
+    ```bash
+    python Desktop_frontend.py
+    ```
+    This command will open the desktop application window.
+
+### III. Web App (`webapp`)
+
+1.  **Navigate to Directory:**
+    ```bash
+    cd webapp
+    ```
+
+2.  **Install Dependencies:**
+    ```bash
+    npm install
+    ```
+
+3.  **Run Application:**
+    ```bash
+    npm run dev
+    ```
+    This will open the application in a browser window. If the application does not open, check that port **5174** is free.
