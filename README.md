@@ -1,8 +1,8 @@
-Desktop_frontend  ------ this is the Desktop Frontend
+Desktop_frontend  ------ this is the Desktop Application Frontend
 	
-equipment_project ----- this the common server in Django
+equipment_project ----- this the common server in Django (desktop + web versions)
 	
-webapp  ----------------- this is reack frontend for webapp
+webapp  ----------------- this is reack frontend for web application
 
 
 Ater cloning repo for each :
