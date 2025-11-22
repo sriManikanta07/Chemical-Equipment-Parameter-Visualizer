@@ -12,7 +12,7 @@
 
 After cloning the repository:
 
-1.  Install dependencies and requirements (using a **virtual environment** is strongly recommended).
+1.  Install dependencies and requirements individually as guided in next steps.(using a **virtual environment** is strongly recommended).
 2.  Run the components separately using the commands provided below.
 3.  Create a new user (use the register option) once the server is running.
 
